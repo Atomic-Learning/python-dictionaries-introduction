@@ -1,0 +1,63 @@
+<h2>Creating Dictionaries</h2>
+
+<p>in Python, Dictionaries use curly braces <code>{}</code>. A key and its corresponding value are separated by a colon <code>:</code>, and key-value pairs are separated by commas <code>,</code>:</p>
+
+<py-cell>atomic_numbers = {"H": 1, "He": 2, "Li": 3}
+student_grades = {"Alice": 95, "Bob": 87, "Charlie": 92}
+empty_dict = {}
+
+print(atomic_numbers)
+print(student_grades)
+print(empty_dict)</py-cell>
+
+<p>When defining a dictioanry with multiple key-value pairs, you can spread the pairs across multiple lines for readability. Indenting each pair is a common style convention (though not required by Python):</p>
+
+<py-cell>person = { 
+    "name": "Alice",
+    "age": 30,
+    "city": "New York" 
+} 
+
+print(person)</py-cell>
+
+<h2>Accessing Values by Key</h2>
+
+<p>Use square brackets with the key to get the corresponding value:</p>
+
+<py-cell>atomic_numbers = {"H": 1, "He": 2, "Li": 3}
+
+print(atomic_numbers["H"])
+print(atomic_numbers["Li"])
+
+grades = {"Alice": 95, "Bob": 87}
+print(grades["Alice"])</py-cell>
+
+<h2>Keys and Values Can Be Different Types</h2>
+
+<p>Values can be any type. Keys are more restrictive in terms of what type can be used - strings and numeric values are most common (the technical requirement is that keys must be <strong>hashable</strong>). Within these constraints, a single dictionary can have a mixture of key and value types:</p>
+
+<py-cell>mixed_dict = {
+    10: 4.2,                 # integer key, float value
+    "string key" : 8         # string key, integer value
+}
+
+print(mixed_dict[10])
+print(mixed_dict["string key"])</py-cell>
+
+<h2>Accessing Non-Existent Keys</h2>
+
+<p>If you try to access a key that doesn't exist, Python raises a <code>KeyError</code>:</p>
+
+<py-cell>grades = {"Alice": 95, "Bob": 87}
+print(grades["David"])</py-cell>
+
+<h2>Assigning Values to Keys</h2>
+
+<p>You can assign a value to a key using square brackets. If the key already exists, its value will be updated. If the key doesn't exist, a new key-value pair will be added to the dictionary:</p> 
+
+<py-cell>grades = {"Alice": 90, "Bob": 85} 
+print(grades) 
+grades["Alice"] = 95 # Update Alice's grade 
+print(grades) # Output: {'Alice': 95, 'Bob': 85} 
+grades["Charlie"] = 92 # Add a new key-value pair 
+print(grades) # Output: {'Alice': 95, 'Bob': 85, 'Charlie': 92}</py-cell>

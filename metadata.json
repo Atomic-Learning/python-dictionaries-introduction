@@ -1,0 +1,21 @@
+{
+    "title": "Python: Dictionaries - Introduction",
+    "slug": "python-dictionaries-introduction",
+    "description": "Introduction to Python dictionaries as key-value collections. Covers creation syntax using curly braces and accessing values by key.",
+    "authors": [
+        "chris-cooling"
+    ],
+    "tags": [
+        "python"
+    ],
+    "duration": 6,
+    "prerequisites": [
+        "python-strings-introduction",
+        "programming-integers-and-floats",
+        "python-exceptions",
+        "programming-dictionaries",
+        "python-print"
+    ],
+    "related": [
+    ]
+}
