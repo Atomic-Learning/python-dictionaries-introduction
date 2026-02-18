@@ -13,7 +13,7 @@
         "python-strings-introduction",
         "programming-integers-and-floats",
         "python-exceptions",
-        "programming-dictionaries",
+        "programming-key-value-collections",
         "python-print"
     ],
     "related": [
