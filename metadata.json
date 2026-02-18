@@ -8,7 +8,7 @@
     "tags": [
         "python"
     ],
-    "duration": 6,
+    "duration": 5,
     "prerequisites": [
         "python-strings-introduction",
         "programming-integers-and-floats",
@@ -17,5 +17,6 @@
         "python-print"
     ],
     "related": [
+        "python-dictionaries-item-assignment"
     ]
 }
